@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists – RevoU Coding Camp</title>
+
+    <!-- Tailwind CSS v4 (CDN play build) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-glass-bg: rgba(255, 255, 255, 0.12);
+        --color-glass-border: rgba(255, 255, 255, 0.25);
+      }
+    </style>
+  </head>
+
+  <body
+    class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 text-white font-sans antialiased"
+  >
+    <!-- Decorative blobs -->
+    <div
+      class="pointer-events-none fixed -top-40 -left-40 w-96 h-96 rounded-full bg-purple-500 opacity-30 blur-3xl"
+    ></div>
+    <div
+      class="pointer-events-none fixed -bottom-40 -right-40 w-96 h-96 rounded-full bg-pink-500 opacity-30 blur-3xl"
+    ></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-16 space-y-10">
+
+      <!-- Page heading -->
+      <header class="text-center space-y-2">
+        <h1
+          class="text-4xl font-extrabold tracking-tight bg-gradient-to-r from-pink-300 via-purple-200 to-indigo-300 bg-clip-text text-transparent"
+        >
+          HTML Lists
+        </h1>
+        <p class="text-white/60 text-sm">A glassmorphism showcase · RevoU Coding Camp</p>
+      </header>
+
+      <!-- Unordered list -->
+      <section
+        class="rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md shadow-xl p-8 space-y-4"
+      >
+        <h2
+          class="text-xl font-bold bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent"
+        >
+          🍎 Favourite Fruits
+        </h2>
+        <p class="text-white/50 text-xs uppercase tracking-widest">Unordered List</p>
+        <ul class="space-y-3 mt-2">
+          <li class="flex items-center gap-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="text-lg">🍓</span> Strawberry
+          </li>
+          <li class="flex items-center gap-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="text-lg">🥭</span> Mango
+          </li>
+          <li class="flex items-center gap-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="text-lg">🍇</span> Grapes
+          </li>
+          <li class="flex items-center gap-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="text-lg">🍋</span> Lemon
+          </li>
+          <li class="flex items-center gap-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="text-lg">🍑</span> Peach
+          </li>
+        </ul>
+      </section>
+
+      <!-- Ordered list -->
+      <section
+        class="rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md shadow-xl p-8 space-y-4"
+      >
+        <h2
+          class="text-xl font-bold bg-gradient-to-r from-indigo-300 to-cyan-300 bg-clip-text text-transparent"
+        >
+          📋 Steps to Learn Web Dev
+        </h2>
+        <p class="text-white/50 text-xs uppercase tracking-widest">Ordered List</p>
+        <ol class="space-y-3 mt-2 counter-reset-[step]">
+          <li class="flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-sm font-bold shadow-lg">1</span>
+            Learn HTML – structure your content
+          </li>
+          <li class="flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-sm font-bold shadow-lg">2</span>
+            Learn CSS – style and layout
+          </li>
+          <li class="flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center text-sm font-bold shadow-lg">3</span>
+            Learn JavaScript – add interactivity
+          </li>
+          <li class="flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center text-sm font-bold shadow-lg">4</span>
+            Build projects – practice makes perfect
+          </li>
+          <li class="flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-3">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-green-400 to-teal-400 flex items-center justify-center text-sm font-bold shadow-lg">5</span>
+            Deploy &amp; share your work 🚀
+          </li>
+        </ol>
+      </section>
+
+      <!-- Description list -->
+      <section
+        class="rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md shadow-xl p-8 space-y-4"
+      >
+        <h2
+          class="text-xl font-bold bg-gradient-to-r from-teal-300 to-green-300 bg-clip-text text-transparent"
+        >
+          📖 Web Tech Glossary
+        </h2>
+        <p class="text-white/50 text-xs uppercase tracking-widest">Description List</p>
+        <dl class="space-y-3 mt-2">
+          <div class="rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-4">
+            <dt class="font-semibold text-teal-300 mb-1">HTML</dt>
+            <dd class="text-white/80 text-sm pl-3 border-l-2 border-teal-400/50">
+              HyperText Markup Language – the skeleton of every web page.
+            </dd>
+          </div>
+          <div class="rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-4">
+            <dt class="font-semibold text-purple-300 mb-1">CSS</dt>
+            <dd class="text-white/80 text-sm pl-3 border-l-2 border-purple-400/50">
+              Cascading Style Sheets – controls colour, layout, and visual design.
+            </dd>
+          </div>
+          <div class="rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-4">
+            <dt class="font-semibold text-pink-300 mb-1">JavaScript</dt>
+            <dd class="text-white/80 text-sm pl-3 border-l-2 border-pink-400/50">
+              The programming language of the web – brings pages to life.
+            </dd>
+          </div>
+          <div class="rounded-xl bg-white/10 hover:bg-white/20 transition-colors px-4 py-4">
+            <dt class="font-semibold text-indigo-300 mb-1">Tailwind CSS</dt>
+            <dd class="text-white/80 text-sm pl-3 border-l-2 border-indigo-400/50">
+              A utility-first CSS framework for building custom designs without leaving your HTML.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- Nested list -->
+      <section
+        class="rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md shadow-xl p-8 space-y-4"
+      >
+        <h2
+          class="text-xl font-bold bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent"
+        >
+          🗂️ Course Curriculum
+        </h2>
+        <p class="text-white/50 text-xs uppercase tracking-widest">Nested List</p>
+        <ul class="space-y-2 mt-2">
+          <li class="rounded-xl bg-white/10 px-4 py-3">
+            <span class="font-semibold text-yellow-300">Module 1 – HTML Basics</span>
+            <ul class="mt-2 ml-4 space-y-1 text-sm text-white/80">
+              <li class="flex items-center gap-2"><span class="text-yellow-400/70">›</span> Tags &amp; Elements</li>
+              <li class="flex items-center gap-2"><span class="text-yellow-400/70">›</span> Semantic HTML</li>
+              <li class="flex items-center gap-2"><span class="text-yellow-400/70">›</span> Forms &amp; Tables</li>
+            </ul>
+          </li>
+          <li class="rounded-xl bg-white/10 px-4 py-3">
+            <span class="font-semibold text-orange-300">Module 2 – CSS Styling</span>
+            <ul class="mt-2 ml-4 space-y-1 text-sm text-white/80">
+              <li class="flex items-center gap-2"><span class="text-orange-400/70">›</span> Selectors &amp; Properties</li>
+              <li class="flex items-center gap-2"><span class="text-orange-400/70">›</span> Flexbox &amp; Grid</li>
+              <li class="flex items-center gap-2"><span class="text-orange-400/70">›</span> Responsive Design</li>
+            </ul>
+          </li>
+          <li class="rounded-xl bg-white/10 px-4 py-3">
+            <span class="font-semibold text-pink-300">Module 3 – Tailwind CSS</span>
+            <ul class="mt-2 ml-4 space-y-1 text-sm text-white/80">
+              <li class="flex items-center gap-2"><span class="text-pink-400/70">›</span> Utility Classes</li>
+              <li class="flex items-center gap-2"><span class="text-pink-400/70">›</span> Customisation &amp; Themes</li>
+              <li class="flex items-center gap-2"><span class="text-pink-400/70">›</span> Component Patterns</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="text-center text-white/30 text-xs pt-4">
+        RevoU Coding Camp · HTML &amp; CSS Track
+      </footer>
+    </div>
+  </body>
+</html>

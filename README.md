@@ -1,6 +1,5 @@
 
 # Latihan hari ini
-
 ---
 
 # Belajar tentang :

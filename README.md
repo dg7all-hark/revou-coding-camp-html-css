@@ -1,7 +1,7 @@
 
 # Latihan hari ini
 
-# Belajar tentang :
+## Belajar tentang :
 Latihan hari ini tentang 
 - index.html
 - list.html
